@@ -10,12 +10,12 @@ def square(t, lenght, n):
 		t.lt(n)
 		
 def polygon(t, lenght, n):
-	for i in range(4):
+	for i in range(n):
+		angle = 360.0/n
 		t.fd(lenght)
-		t.lt(lenght)
-		t.fd(n)	
+		t.lt(angle)
 
-square(bob, 90, 70)
-##polygon(bob, 70, 90)
+##square(bob, 90, 70)
+polygon(bob, 52, 7)
 
 turtle.mainloop()
